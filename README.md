@@ -92,9 +92,9 @@
 > 8.Exec command 에 다음 입력
 > ```bash
 > launchctl stop external-api.mvc
-> launchctl start external-api.mvc
 > ```
-> 9.저장 버튼을 클릭해서 프로젝트 생
+> launchctl 로드 `launchctl load external-api.mvc.plist` 해놓으면 stop 해도 자동으로 재실행된다.
+> 9.저장 버튼을 클릭해서 프로젝트 생성
 
 ### macOS 서비스 등록
 > 내가 사용하는 Dev 서버는 macOS 환경으로 Dev 서버에는 다음을 정의한다.  

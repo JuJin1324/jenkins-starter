@@ -18,22 +18,15 @@
 > `Install suggested plugins` 로 설치  
 > 계정 생성 
 
-## Maven build
-### Plugin 설치
-> 1.Dashboard 화면에서 좌측 메뉴 `Jenkins 관리` 클릭  
-> 2.`플러그인 관리` 클릭  
-> 3.`설치 가능` 탭 클릭 후 필터에 `Maven Integration` 입력    
-> 4.`Maven Integration plugin` 옆에 install 체크 박스 체크 후 `install without restart` 클릭   
-
+## JDK
 ### Global Tool Configuration
 > 1.Dashboard 화면에서 좌측 메뉴 `Jenkins 관리` 클릭  
 > 2.`Global Tool Configuration` 클릭  
-> 3.Maven 탭에서 `Add Maven` 버튼 클릭  
-> 4.Name: Maven 3.8.6, `Install automatically` 체크, version 선택 후 `Save`
+> 3.JDK 탭에서 `Add JDK` 버튼 클릭  
+> 4.Name: Corretto 11, `Install automatically` 체크
+> 5.[Corretto 11 Download Page](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) 에서 운영체제에 맞는 Download Link 링크 복사
+> 6.`Download URL for binary archive` 에 붙여넣기
 
-### 프로젝트 생성
-> 1.Dashboard 화면에서 좌측 `새로운 Item` 클릭  
-> 2.프로젝트 이름 작성 후 `Maven project` 클릭 후 `OK` 버튼 클릭  
 
 ## Gradle build
 ### Plugin 설치
@@ -127,3 +120,20 @@
 ### 참조사이트
 > [[Jenkins]Jenkins 원격서버 배포(Publish Over SSH 플러그인)](https://blog.naver.com/PostView.naver?blogId=hj_kim97&logNo=222468500674&parentCategoryNo=&categoryNo=42&viewDate=&isShowPopularPosts=false&from=postView)
 > [launchctl 사용법: 맥OS에서 서비스 등록하기](https://www.44bits.io/ko/post/register-service-on-macos-by-using-launchctl)
+
+## Maven build
+### Plugin 설치
+> 1.Dashboard 화면에서 좌측 메뉴 `Jenkins 관리` 클릭  
+> 2.`플러그인 관리` 클릭  
+> 3.`설치 가능` 탭 클릭 후 필터에 `Maven Integration` 입력    
+> 4.`Maven Integration plugin` 옆에 install 체크 박스 체크 후 `install without restart` 클릭   
+
+### Global Tool Configuration
+> 1.Dashboard 화면에서 좌측 메뉴 `Jenkins 관리` 클릭  
+> 2.`Global Tool Configuration` 클릭  
+> 3.Maven 탭에서 `Add Maven` 버튼 클릭  
+> 4.Name: Maven 3.8.6, `Install automatically` 체크, version 선택 후 `Save`
+
+### 프로젝트 생성
+> 1.Dashboard 화면에서 좌측 `새로운 Item` 클릭  
+> 2.프로젝트 이름 작성 후 `Maven project` 클릭 후 `OK` 버튼 클릭  

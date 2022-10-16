@@ -18,6 +18,14 @@
 > `Install suggested plugins` 로 설치  
 > 계정 생성 
 
+### Docker
+> 현재 프로젝트의 docker 디렉터리 아래 docker-compose.yml 을 이용한 실행  
+> 실행 전에 docker-compose.yml 에 설정된 Jenkins Volume 을 본인의 커스텀 경로 설정 혹은 그대로 사용할 거면 볼륨 경로 생성  
+> `mkdir -p ~/Documents/dev/jenkins/jenkins_home`  
+> 
+> `docker-compose up -d` 실행 후 브라우저에 `http://localhost:8080` 접속  
+> 초기 패스워드: `cat ~/Documents/dev/jenkins/jenkins_home/secrets/initialAdminPassword`  
+
 ## JDK
 ### Global Tool Configuration
 > 1.Dashboard 화면에서 좌측 메뉴 `Jenkins 관리` 클릭  
@@ -26,7 +34,6 @@
 > 4.Name: Corretto 11, `Install automatically` 체크
 > 5.[Corretto 11 Download Page](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) 에서 운영체제에 맞는 Download Link 링크 복사
 > 6.`Download URL for binary archive` 에 붙여넣기
-
 
 ## Gradle build
 ### Plugin 설치

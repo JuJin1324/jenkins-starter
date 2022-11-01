@@ -23,7 +23,7 @@
 > 실행 전에 docker-compose.yml 에 설정된 Jenkins Volume 을 본인의 커스텀 경로 설정 혹은 그대로 사용할 거면 볼륨 경로 생성  
 > `mkdir -p ~/Documents/dev/jenkins/jenkins_home`  
 > 
-> `docker-compose up -d` 실행 후 브라우저에 `http://localhost:8080` 접속  
+> 프로젝트 아래 docker 디렉터리에서 `sudo chmod +x jenkins-start.sh; ./jenkins-start.sh` 실행 후 브라우저에 `http://localhost:8099` 접속  
 > 초기 패스워드: `cat ~/Documents/dev/jenkins/jenkins_home/secrets/initialAdminPassword`  
 
 ## JDK
